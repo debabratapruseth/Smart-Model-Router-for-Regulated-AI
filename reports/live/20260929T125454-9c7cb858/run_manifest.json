@@ -1,0 +1,356 @@
+{
+  "run_id": "20260929T125454-9c7cb858",
+  "timestamp": "2026-09-29T12:54:54.821834+00:00",
+  "plan_hash": "e344e9ed9acb1363afc3619249845929f24b1b921e624d8e8713e71d9cad62b4",
+  "pricing_config_hash": "3ae145fe4cd76691956814d8ca9bba70d7305f236606d70d4340ab767f1c7166",
+  "pricing_version": "routing-api-pricing-2026-09-29",
+  "pricing_effective_date": "2026-09-29",
+  "pricing_source": {
+    "openai": "https://developers.openai.com/api/docs/pricing",
+    "openai_model": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+    "jev": "https://openrouter.ai/docs/guides/community/typesafe-sdk"
+  },
+  "pricing_configuration": {
+    "version": "routing-api-pricing-1.0",
+    "pricing_version": "routing-api-pricing-2026-09-29",
+    "effective_date": "2026-09-29",
+    "verified_date": "2026-09-29",
+    "currency": "USD",
+    "source": {
+      "openai": "https://developers.openai.com/api/docs/pricing",
+      "openai_model": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+      "jev": "https://openrouter.ai/docs/guides/community/typesafe-sdk"
+    },
+    "openai": {
+      "gpt-4.1-mini-2025-04-14": {
+        "service_tier": "default",
+        "input_per_1m_tokens": 0.4,
+        "cached_input_per_1m_tokens": 0.1,
+        "output_per_1m_tokens": 1.6
+      }
+    },
+    "jev": {
+      "cost_method": "PROVIDER_REPORTED",
+      "cost_field": "usage.cost",
+      "currency": "USD",
+      "missing_cost_status": "PROVIDER_COST_UNAVAILABLE"
+    }
+  },
+  "cost_scope": "EXTERNAL_ROUTING_API_ONLY_EXCLUDES_DOWNSTREAM_AND_LOCAL_COMPUTE",
+  "cost_calculation_method": {
+    "openai": "UNCACHED_INPUT_PLUS_CACHED_INPUT_PLUS_OUTPUT_PER_1M",
+    "jev": "OPENROUTER_USAGE_COST_USD"
+  },
+  "benchmark_type": [
+    "IID_SYNTHETIC",
+    "TEMPLATE_HELD_OUT"
+  ],
+  "input_mode": "STRUCTURED_ONLY",
+  "reference_evidence_type": "SYNTHETIC",
+  "description": "Empirical live routing execution evaluated against a synthetic reference-routing objective.",
+  "research_eligible_definition": "Live provider rows require a successful valid external routing decision; replay rows are exact frozen synthetic decisions. Local policy abstentions are not empirical provider evidence.",
+  "datasets": {
+    "IID_SYNTHETIC": {
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "source_run_id": "20260928T153247-eb297b76",
+      "test_seed": 42,
+      "training_seed": 1042,
+      "test_template_ids": [
+        "TEMPLATE_001",
+        "TEMPLATE_002",
+        "TEMPLATE_003",
+        "TEMPLATE_004",
+        "TEMPLATE_005",
+        "TEMPLATE_006",
+        "TEMPLATE_007",
+        "TEMPLATE_008",
+        "TEMPLATE_009",
+        "TEMPLATE_010",
+        "TEMPLATE_011",
+        "TEMPLATE_012",
+        "TEMPLATE_013",
+        "TEMPLATE_014"
+      ],
+      "config_hashes": {
+        "evaluation": "812e4351364dd0bc5473a6cfeb0e8ed23c0226e119bbd2be063cb98f6e75a55b",
+        "routing": "27600845717b376995076fadd5a521a427cfe1c802643466bd190cd137f9e180",
+        "policies": "2385f7f738ee04cb309489f89df9563d7671ee6037d7990e5319cb1c9c4f419e",
+        "catalog": "0a948e0e1a1376fad8810c71860b0a6b3fab056a6fc0a28d373fb7f5f819ab42"
+      },
+      "ml_model_fingerprint": "6c0c72ece57e394536d21b883bf17266dc2b07136cedd3252a0b89c39524c1b0",
+      "source_results_hash": "c14131e46f172312f0979edea17c1fb1fcfe277a3f73497d9d2a3618f0d6478e"
+    },
+    "TEMPLATE_HELD_OUT": {
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "source_run_id": "20260928T153148-82538755",
+      "test_seed": 2042,
+      "training_seed": 1042,
+      "test_template_ids": [
+        "TEMPLATE_015",
+        "TEMPLATE_016",
+        "TEMPLATE_017",
+        "TEMPLATE_018",
+        "TEMPLATE_019",
+        "TEMPLATE_020",
+        "TEMPLATE_021",
+        "TEMPLATE_022",
+        "TEMPLATE_023",
+        "TEMPLATE_024",
+        "TEMPLATE_025",
+        "TEMPLATE_026",
+        "TEMPLATE_027",
+        "TEMPLATE_028"
+      ],
+      "config_hashes": {
+        "evaluation": "812e4351364dd0bc5473a6cfeb0e8ed23c0226e119bbd2be063cb98f6e75a55b",
+        "routing": "27600845717b376995076fadd5a521a427cfe1c802643466bd190cd137f9e180",
+        "policies": "2385f7f738ee04cb309489f89df9563d7671ee6037d7990e5319cb1c9c4f419e",
+        "catalog": "0a948e0e1a1376fad8810c71860b0a6b3fab056a6fc0a28d373fb7f5f819ab42"
+      },
+      "ml_model_fingerprint": "6c0c72ece57e394536d21b883bf17266dc2b07136cedd3252a0b89c39524c1b0",
+      "source_results_hash": "11451b9f494b33af08b9990ef080c0dc66fe7a1ea0e8de745b2b8a146b9143f4"
+    }
+  },
+  "live_config_hash": "5313cdf4c0f9db1145aeb99ca2b59713e6d8749da59d0fabd09bf819869df5d7",
+  "python_version": "3.13.13 (main, Apr  7 2026, 18:19:01) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "packages": {
+    "openai": "2.54.0",
+    "typesafe-sdk": "0.7.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.13.1",
+    "pydantic": "2.13.5"
+  },
+  "strategy_versions": {
+    "rules": "FROZEN_BASELINE",
+    "weighted": "FROZEN_BASELINE",
+    "ml": "FROZEN_BASELINE",
+    "openai": "OPENAI_ROUTER_PROMPT_V1",
+    "jev": "JEV_ROUTER_DECISION_V1"
+  },
+  "router_models": {
+    "openai": "gpt-4.1-mini-2025-04-14",
+    "jev": "jev-latest"
+  },
+  "prompt_versions": {
+    "openai": "OPENAI_ROUTER_PROMPT_V1",
+    "jev": "JEV_ROUTER_DECISION_V1"
+  },
+  "source_hashes": {
+    "app/strategies/llm.py": "3e332e90d628e1616b9f9b89133670e2dae6a2d2e7d3752075db081fabafbc1b",
+    "app/strategies/live_jev.py": "c29fec2c765742132cc0a4c49ea3974b26bd3c496e0a8cf92b293f731adc550a",
+    "app/strategies/live_base.py": "13852d7e9306269830b621754b02411996d18da5b9ff2bb6f5facd8ed26d17ef",
+    "app/models/live_routing.py": "19d3c928a411260214e998cabad20d920703e350f26811d4563a60f5058d2623",
+    "evaluation/live_benchmark.py": "b8d8ede4180e02944c9660c9b4a01410911e96b66991f32cc790f00ec8b53a75",
+    "evaluation/frozen_baseline.py": "adc6422908278cc2c12c62b7d50c8d699a6e7ba5bbd23d80a1e0464e4a2dbe6e",
+    "evaluation/live_store.py": "cb3635e4e559c40892037959363ed3f32d21b94ba4cadbe7076f7d157b01b8dc",
+    "evaluation/live_reporting.py": "efa9754f74a6802548179b7d1b3e6bcda4a3bcd7217448f61e8713d24f230f22",
+    "app/services/routing_costs.py": "205078500bf7c94eb7fefaf5bf0ce07303f8bf0c9bbb6088a0c811fa4aec5afb"
+  },
+  "configuration": {
+    "version": "live-routing-1.0",
+    "input_mode": "STRUCTURED_ONLY",
+    "research_mode_no_fallback": true,
+    "openai": {
+      "enabled": false,
+      "model": null,
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "max_output_tokens": 512,
+      "temperature": null
+    },
+    "jev": {
+      "enabled": false,
+      "model": "jev-latest",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25
+    },
+    "pilot": {
+      "iid_requests": 15,
+      "held_out_requests": 15,
+      "seed": 3042,
+      "max_live_api_calls": 50
+    },
+    "routing_api_pricing": {
+      "openai": {},
+      "jev": {}
+    }
+  },
+  "resolved_provider_settings": {
+    "openai": {
+      "enabled": true,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "max_output_tokens": 512,
+      "temperature": null,
+      "pricing_catalog": {
+        "version": "routing-api-pricing-1.0",
+        "pricing_version": "routing-api-pricing-2026-09-29",
+        "effective_date": "2026-09-29",
+        "verified_date": "2026-09-29",
+        "currency": "USD",
+        "source": {
+          "openai": "https://developers.openai.com/api/docs/pricing",
+          "openai_model": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+          "jev": "https://openrouter.ai/docs/guides/community/typesafe-sdk"
+        },
+        "openai": {
+          "gpt-4.1-mini-2025-04-14": {
+            "service_tier": "default",
+            "input_per_1m_tokens": 0.4,
+            "cached_input_per_1m_tokens": 0.1,
+            "output_per_1m_tokens": 1.6
+          }
+        },
+        "jev": {
+          "cost_method": "PROVIDER_REPORTED",
+          "cost_field": "usage.cost",
+          "currency": "USD",
+          "missing_cost_status": "PROVIDER_COST_UNAVAILABLE"
+        }
+      },
+      "pricing": null
+    },
+    "jev": {
+      "enabled": true,
+      "model": "jev-latest",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "pricing_catalog": {
+        "version": "routing-api-pricing-1.0",
+        "pricing_version": "routing-api-pricing-2026-09-29",
+        "effective_date": "2026-09-29",
+        "verified_date": "2026-09-29",
+        "currency": "USD",
+        "source": {
+          "openai": "https://developers.openai.com/api/docs/pricing",
+          "openai_model": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+          "jev": "https://openrouter.ai/docs/guides/community/typesafe-sdk"
+        },
+        "openai": {
+          "gpt-4.1-mini-2025-04-14": {
+            "service_tier": "default",
+            "input_per_1m_tokens": 0.4,
+            "cached_input_per_1m_tokens": 0.1,
+            "output_per_1m_tokens": 1.6
+          }
+        },
+        "jev": {
+          "cost_method": "PROVIDER_REPORTED",
+          "cost_field": "usage.cost",
+          "currency": "USD",
+          "missing_cost_status": "PROVIDER_COST_UNAVAILABLE"
+        }
+      },
+      "pricing": null,
+      "mock_mode": false
+    }
+  },
+  "planned_request_counts": {
+    "IID_SYNTHETIC": 15,
+    "TEMPLATE_HELD_OUT": 15
+  },
+  "planned_no_route_counts": {
+    "IID_SYNTHETIC": 4,
+    "TEMPLATE_HELD_OUT": 3
+  },
+  "git_commit": null,
+  "status": "COMPLETED",
+  "max_live_api_calls": 50,
+  "max_routing_spend_usd": null,
+  "last_resume_timestamp": "2026-09-29T12:54:54.832162+00:00",
+  "api_call_count": 46,
+  "failed_call_count": 0,
+  "successful_api_response_count": 46,
+  "retry_count": 0,
+  "routing_cost_usd": 0.01878292,
+  "known_routing_cost_usd": 0.01878292,
+  "unknown_cost_attempts": 0,
+  "completed_observation_count": 150,
+  "execution_mode_per_strategy": {
+    "jev": [
+      "LIVE",
+      "LOCAL"
+    ],
+    "ml": [
+      "BASELINE_REPLAY"
+    ],
+    "openai": [
+      "LIVE",
+      "LOCAL"
+    ],
+    "rules": [
+      "BASELINE_REPLAY"
+    ],
+    "weighted": [
+      "BASELINE_REPLAY"
+    ]
+  },
+  "evidence_type_per_strategy": {
+    "jev": [
+      "EMPIRICAL",
+      "SYNTHETIC"
+    ],
+    "ml": [
+      "SYNTHETIC"
+    ],
+    "openai": [
+      "EMPIRICAL",
+      "SYNTHETIC"
+    ],
+    "rules": [
+      "SYNTHETIC"
+    ],
+    "weighted": [
+      "SYNTHETIC"
+    ]
+  },
+  "research_eligible_per_strategy": {
+    "jev": true,
+    "ml": true,
+    "openai": true,
+    "rules": true,
+    "weighted": true
+  },
+  "returned_model_versions_per_strategy": {
+    "jev": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "ml": [],
+    "openai": [
+      "gpt-4.1-mini-2025-04-14"
+    ],
+    "rules": [],
+    "weighted": []
+  },
+  "input_tokens": 89893,
+  "output_tokens": 1971,
+  "total_tokens": 91864,
+  "cached_tokens": null,
+  "cached_input_tokens": null,
+  "total_routing_cost_usd": 0.01878292,
+  "cost_status_per_strategy": {
+    "jev": [
+      "NOT_APPLICABLE_NO_ROUTE",
+      "PROVIDER_REPORTED"
+    ],
+    "ml": [
+      "BASELINE_REPLAY_ZERO_EXTERNAL_COST"
+    ],
+    "openai": [
+      "CALCULATED_FROM_PROVIDER_USAGE",
+      "NOT_APPLICABLE_NO_ROUTE"
+    ],
+    "rules": [
+      "BASELINE_REPLAY_ZERO_EXTERNAL_COST"
+    ],
+    "weighted": [
+      "BASELINE_REPLAY_ZERO_EXTERNAL_COST"
+    ]
+  },
+  "end_timestamp": "2026-09-29T12:55:51.511262+00:00"
+}

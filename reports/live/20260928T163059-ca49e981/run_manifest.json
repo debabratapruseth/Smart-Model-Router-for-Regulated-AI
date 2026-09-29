@@ -1,0 +1,237 @@
+{
+  "run_id": "20260928T163059-ca49e981",
+  "timestamp": "2026-09-28T16:30:59.565050+00:00",
+  "plan_hash": "5068499663fbb1670e7d2bc72d0264dcef266c97bfcd6f660d2d6d85cf6dcb1a",
+  "benchmark_type": [
+    "IID_SYNTHETIC",
+    "TEMPLATE_HELD_OUT"
+  ],
+  "input_mode": "STRUCTURED_ONLY",
+  "reference_evidence_type": "SYNTHETIC",
+  "description": "Empirical live routing execution evaluated against a synthetic reference-routing objective.",
+  "research_eligible_definition": "Live provider rows require a successful valid external routing decision; replay rows are exact frozen synthetic decisions. Local policy abstentions are not empirical provider evidence.",
+  "datasets": {
+    "IID_SYNTHETIC": {
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "source_run_id": "20260928T153247-eb297b76",
+      "test_seed": 42,
+      "training_seed": 1042,
+      "test_template_ids": [
+        "TEMPLATE_001",
+        "TEMPLATE_002",
+        "TEMPLATE_003",
+        "TEMPLATE_004",
+        "TEMPLATE_005",
+        "TEMPLATE_006",
+        "TEMPLATE_007",
+        "TEMPLATE_008",
+        "TEMPLATE_009",
+        "TEMPLATE_010",
+        "TEMPLATE_011",
+        "TEMPLATE_012",
+        "TEMPLATE_013",
+        "TEMPLATE_014"
+      ],
+      "config_hashes": {
+        "evaluation": "812e4351364dd0bc5473a6cfeb0e8ed23c0226e119bbd2be063cb98f6e75a55b",
+        "routing": "27600845717b376995076fadd5a521a427cfe1c802643466bd190cd137f9e180",
+        "policies": "2385f7f738ee04cb309489f89df9563d7671ee6037d7990e5319cb1c9c4f419e",
+        "catalog": "0a948e0e1a1376fad8810c71860b0a6b3fab056a6fc0a28d373fb7f5f819ab42"
+      },
+      "ml_model_fingerprint": "6c0c72ece57e394536d21b883bf17266dc2b07136cedd3252a0b89c39524c1b0",
+      "source_results_hash": "c14131e46f172312f0979edea17c1fb1fcfe277a3f73497d9d2a3618f0d6478e"
+    },
+    "TEMPLATE_HELD_OUT": {
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "source_run_id": "20260928T153148-82538755",
+      "test_seed": 2042,
+      "training_seed": 1042,
+      "test_template_ids": [
+        "TEMPLATE_015",
+        "TEMPLATE_016",
+        "TEMPLATE_017",
+        "TEMPLATE_018",
+        "TEMPLATE_019",
+        "TEMPLATE_020",
+        "TEMPLATE_021",
+        "TEMPLATE_022",
+        "TEMPLATE_023",
+        "TEMPLATE_024",
+        "TEMPLATE_025",
+        "TEMPLATE_026",
+        "TEMPLATE_027",
+        "TEMPLATE_028"
+      ],
+      "config_hashes": {
+        "evaluation": "812e4351364dd0bc5473a6cfeb0e8ed23c0226e119bbd2be063cb98f6e75a55b",
+        "routing": "27600845717b376995076fadd5a521a427cfe1c802643466bd190cd137f9e180",
+        "policies": "2385f7f738ee04cb309489f89df9563d7671ee6037d7990e5319cb1c9c4f419e",
+        "catalog": "0a948e0e1a1376fad8810c71860b0a6b3fab056a6fc0a28d373fb7f5f819ab42"
+      },
+      "ml_model_fingerprint": "6c0c72ece57e394536d21b883bf17266dc2b07136cedd3252a0b89c39524c1b0",
+      "source_results_hash": "11451b9f494b33af08b9990ef080c0dc66fe7a1ea0e8de745b2b8a146b9143f4"
+    }
+  },
+  "live_config_hash": "5313cdf4c0f9db1145aeb99ca2b59713e6d8749da59d0fabd09bf819869df5d7",
+  "python_version": "3.13.13 (main, Apr  7 2026, 18:19:01) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "packages": {
+    "openai": "2.54.0",
+    "typesafe-sdk": "0.7.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.13.1",
+    "pydantic": "2.13.5"
+  },
+  "strategy_versions": {
+    "rules": "FROZEN_BASELINE",
+    "weighted": "FROZEN_BASELINE",
+    "ml": "FROZEN_BASELINE",
+    "openai": "OPENAI_ROUTER_PROMPT_V1",
+    "jev": "JEV_ROUTER_DECISION_V1"
+  },
+  "router_models": {
+    "openai": null,
+    "jev": "jev-latest"
+  },
+  "prompt_versions": {
+    "openai": "OPENAI_ROUTER_PROMPT_V1",
+    "jev": "JEV_ROUTER_DECISION_V1"
+  },
+  "source_hashes": {
+    "app/strategies/llm.py": "ac6faad129a3c8c05f3e891e72666ab617e173efbc59675186894a2fd560fb2b",
+    "app/strategies/live_jev.py": "2fba7165e4ec57dc47efa34adfbfb44cb92f0155d9303f3ecc2c2e8f6154a965",
+    "app/strategies/live_base.py": "a2ab915764dc5550425cf9e9d4379f494724953604b631202383ab5e80800c3a",
+    "app/models/live_routing.py": "c2fe9bc6f8651d0cbcc459b90b58cdc0b028fdb5c4e123de6ffd5713dbf885f1",
+    "evaluation/live_benchmark.py": "1955906ea18e33af5873e2172b7782cdb48087396e05f23b17fcef406f51dc2a",
+    "evaluation/frozen_baseline.py": "adc6422908278cc2c12c62b7d50c8d699a6e7ba5bbd23d80a1e0464e4a2dbe6e",
+    "evaluation/live_store.py": "4a38fa804c0a022d6f704a044872698ac550d415b2d571e1f3289c92f688a584",
+    "evaluation/live_reporting.py": "37625aa158fbeb9033a9de756dd853dd52dd4dbded2c147a495b3c30e5d715f4"
+  },
+  "configuration": {
+    "version": "live-routing-1.0",
+    "input_mode": "STRUCTURED_ONLY",
+    "research_mode_no_fallback": true,
+    "openai": {
+      "enabled": false,
+      "model": null,
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "max_output_tokens": 512,
+      "temperature": null
+    },
+    "jev": {
+      "enabled": false,
+      "model": "jev-latest",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25
+    },
+    "pilot": {
+      "iid_requests": 15,
+      "held_out_requests": 15,
+      "seed": 3042,
+      "max_live_api_calls": 50
+    },
+    "routing_api_pricing": {
+      "openai": {},
+      "jev": {}
+    }
+  },
+  "resolved_provider_settings": {
+    "openai": {
+      "enabled": false,
+      "model": null,
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "max_output_tokens": 512,
+      "temperature": null,
+      "pricing": null
+    },
+    "jev": {
+      "enabled": false,
+      "model": "jev-latest",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "pricing": null,
+      "mock_mode": true
+    }
+  },
+  "planned_request_counts": {
+    "IID_SYNTHETIC": 15,
+    "TEMPLATE_HELD_OUT": 15
+  },
+  "planned_no_route_counts": {
+    "IID_SYNTHETIC": 4,
+    "TEMPLATE_HELD_OUT": 3
+  },
+  "git_commit": null,
+  "status": "COMPLETED",
+  "max_live_api_calls": 50,
+  "max_routing_spend_usd": null,
+  "last_resume_timestamp": "2026-09-28T16:30:59.581374+00:00",
+  "api_call_count": 0,
+  "failed_call_count": 0,
+  "successful_api_response_count": 0,
+  "retry_count": 0,
+  "routing_cost_usd": 0,
+  "known_routing_cost_usd": 0,
+  "unknown_cost_attempts": 0,
+  "completed_observation_count": 150,
+  "execution_mode_per_strategy": {
+    "jev": [
+      "LIVE",
+      "LOCAL"
+    ],
+    "ml": [
+      "BASELINE_REPLAY"
+    ],
+    "openai": [
+      "LIVE",
+      "LOCAL"
+    ],
+    "rules": [
+      "BASELINE_REPLAY"
+    ],
+    "weighted": [
+      "BASELINE_REPLAY"
+    ]
+  },
+  "evidence_type_per_strategy": {
+    "jev": [
+      "SYNTHETIC"
+    ],
+    "ml": [
+      "SYNTHETIC"
+    ],
+    "openai": [
+      "SYNTHETIC"
+    ],
+    "rules": [
+      "SYNTHETIC"
+    ],
+    "weighted": [
+      "SYNTHETIC"
+    ]
+  },
+  "research_eligible_per_strategy": {
+    "jev": false,
+    "ml": true,
+    "openai": false,
+    "rules": true,
+    "weighted": true
+  },
+  "returned_model_versions_per_strategy": {
+    "jev": [],
+    "ml": [],
+    "openai": [],
+    "rules": [],
+    "weighted": []
+  },
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "total_tokens": 0,
+  "cached_tokens": 0,
+  "end_timestamp": "2026-09-28T16:31:03.241095+00:00"
+}

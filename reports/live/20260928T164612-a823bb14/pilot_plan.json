@@ -1,0 +1,565 @@
+{
+  "strategies": [
+    "rules",
+    "weighted",
+    "ml",
+    "openai",
+    "jev"
+  ],
+  "full": false,
+  "pilot_seed": 3042,
+  "items": [
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00037",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "48df2be68d55f3b79f52c9bd26685c08830b7b5bf87c1ec00da10679f92964bb",
+      "eligible_models": [],
+      "template_id": "TEMPLATE_010",
+      "task_type": "EMBEDDING",
+      "complexity": "HIGH",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "LATENCY_FIRST",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00083",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "f1e9cb4afc6ae33800a0ad54ac3f55cd7542c23c4bbf037d8c06ee56f1cf94f8",
+      "eligible_models": [],
+      "template_id": "TEMPLATE_014",
+      "task_type": "MULTIMODAL",
+      "complexity": "MEDIUM",
+      "data_classification": "RESTRICTED",
+      "cost_preference": "MINIMIZE_COST",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00165",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "0f2c3525715ea6f242335d83747071c117448489359b9d344ac624982567abf1",
+      "eligible_models": [
+        "multimodal",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_012",
+      "task_type": "TEXT_TO_SPEECH",
+      "complexity": "HIGH",
+      "data_classification": "INTERNAL",
+      "cost_preference": "MINIMIZE_COST",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00381",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "cb7e54f9d51111caa5f160057bb5fdde339e14fcefb153bb69b35c86c175c10c",
+      "eligible_models": [
+        "enterprise",
+        "reasoning",
+        "long-context",
+        "coder",
+        "multimodal",
+        "embedder",
+        "speech",
+        "finance"
+      ],
+      "template_id": "TEMPLATE_004",
+      "task_type": "ANALYSIS",
+      "complexity": "LOW",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "MINIMIZE_COST",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00392",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "10ce5a1b3b523802b253f49976093e74c4fa9c029e7ec5679a5c50011f8c86b1",
+      "eligible_models": [
+        "long-context"
+      ],
+      "template_id": "TEMPLATE_001",
+      "task_type": "SUMMARIZATION",
+      "complexity": "HIGH",
+      "data_classification": "INTERNAL",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00484",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "3b716e6b9340460d922c3f2fc03bc1f55b27b8224feebcc7a92740e33506bc41",
+      "eligible_models": [
+        "enterprise",
+        "finance"
+      ],
+      "template_id": "TEMPLATE_009",
+      "task_type": "RAG_QA",
+      "complexity": "HIGH",
+      "data_classification": "INTERNAL",
+      "cost_preference": "LATENCY_FIRST",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00618",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "7cb718541e025427c697213fa0d41303a090155bc41947a277de7c45bdda36ed",
+      "eligible_models": [
+        "local-small",
+        "enterprise",
+        "reasoning",
+        "long-context",
+        "coder",
+        "multimodal",
+        "embedder",
+        "speech",
+        "finance",
+        "speed"
+      ],
+      "template_id": "TEMPLATE_003",
+      "task_type": "EXTRACTION",
+      "complexity": "LOW",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "LATENCY_FIRST",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00648",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "61c4ddccf930659a74bb2b8c1fbf69e7f1d29d23705237dd4dd18dbadfe1ab51",
+      "eligible_models": [],
+      "template_id": "TEMPLATE_005",
+      "task_type": "REASONING",
+      "complexity": "HIGH",
+      "data_classification": "RESTRICTED",
+      "cost_preference": "LATENCY_FIRST",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00707",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "d64f7cb12dff6febfe8df30ad94b1ea0af5bf0ce9b0f1831f4cf4556ed5b3e96",
+      "eligible_models": [
+        "enterprise",
+        "finance"
+      ],
+      "template_id": "TEMPLATE_008",
+      "task_type": "QUESTION_ANSWERING",
+      "complexity": "HIGH",
+      "data_classification": "RESTRICTED",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00715",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "d5edd062b8d782fd0c558be9cc5771014414ff6873659333e3f18e4f48ba0a8d",
+      "eligible_models": [
+        "long-context"
+      ],
+      "template_id": "TEMPLATE_002",
+      "task_type": "CLASSIFICATION",
+      "complexity": "HIGH",
+      "data_classification": "PUBLIC",
+      "cost_preference": "QUALITY_FIRST",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00724",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "36dc648aeef37a602b6181f0c6252fc5b2294e85b0cb23b4e0c50ad2e0d32894",
+      "eligible_models": [
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_011",
+      "task_type": "SPEECH_TO_TEXT",
+      "complexity": "MEDIUM",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00748",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "0883d8ddee7eceaadc9dc01583ff11c26c037635e6e31fcdacd1505a6f724762",
+      "eligible_models": [
+        "enterprise",
+        "reasoning",
+        "long-context",
+        "coder",
+        "multimodal",
+        "embedder",
+        "speech",
+        "finance",
+        "speed",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_007",
+      "task_type": "TRANSLATION",
+      "complexity": "HIGH",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "QUALITY_FIRST",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00845",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "e03655d8b2213794d533e93ae97b9f9dc1647dc81a58f9fc1e9d2c94f401ea19",
+      "eligible_models": [
+        "enterprise",
+        "coder"
+      ],
+      "template_id": "TEMPLATE_006",
+      "task_type": "CODING",
+      "complexity": "MEDIUM",
+      "data_classification": "RESTRICTED",
+      "cost_preference": "MINIMIZE_COST",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00852",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "c9494a2065855dcc389c3e79e4d19120b2bcbc28b439c833ad1eface649d55a9",
+      "eligible_models": [
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_013",
+      "task_type": "IMAGE",
+      "complexity": "HIGH",
+      "data_classification": "PUBLIC",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "IID_SYNTHETIC",
+      "request_id": "REQ-00962",
+      "dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "canonical_input_hash": "b76c0a3e27f2f82a89f9a6fb8375aebdc01e844589ffd524a76c018dbb6b677c",
+      "eligible_models": [],
+      "template_id": "TEMPLATE_011",
+      "task_type": "SPEECH_TO_TEXT",
+      "complexity": "MEDIUM",
+      "data_classification": "PUBLIC",
+      "cost_preference": "QUALITY_FIRST",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00025",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "57806bc111bc6550f9df504d0d553723e4887e3f9428fdf412968cab2202e847",
+      "eligible_models": [
+        "multimodal",
+        "speech",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_026",
+      "task_type": "TEXT_TO_SPEECH",
+      "complexity": "LOW",
+      "data_classification": "PUBLIC",
+      "cost_preference": "LATENCY_FIRST",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00030",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "c5be5b33d92a77db18a926ae403284ee22e6d2bac0149fdc5dae5035554dcd21",
+      "eligible_models": [
+        "enterprise",
+        "reasoning",
+        "long-context",
+        "multimodal",
+        "finance",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_017",
+      "task_type": "EXTRACTION",
+      "complexity": "HIGH",
+      "data_classification": "PUBLIC",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00083",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "1c91e59a0165698d016db90c6c8a36f8f929ebb18a6799119c9e72e9fe02491f",
+      "eligible_models": [
+        "multimodal",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_028",
+      "task_type": "MULTIMODAL",
+      "complexity": "MEDIUM",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00117",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "06284461e2e119499e68e7e06d35a6be261c6356909d4ba325654bdafe706b93",
+      "eligible_models": [
+        "enterprise",
+        "coder"
+      ],
+      "template_id": "TEMPLATE_020",
+      "task_type": "CODING",
+      "complexity": "LOW",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00143",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "6e59b8fa2887ad8db520f9835dff9c446231e4579a561b9cc4194c4affc7760c",
+      "eligible_models": [
+        "enterprise",
+        "finance"
+      ],
+      "template_id": "TEMPLATE_018",
+      "task_type": "ANALYSIS",
+      "complexity": "LOW",
+      "data_classification": "RESTRICTED",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00180",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "f6884b4f27c81f6729b13c3a10eadb7ff34abbfb6d524119b7d46528bf4aeceb",
+      "eligible_models": [
+        "multimodal",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_027",
+      "task_type": "IMAGE",
+      "complexity": "HIGH",
+      "data_classification": "INTERNAL",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00191",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "bfeab348c88a782e71ba67860a3ac321193c9a99beedd4e947f36cfe9f84316b",
+      "eligible_models": [],
+      "template_id": "TEMPLATE_024",
+      "task_type": "EMBEDDING",
+      "complexity": "LOW",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "QUALITY_FIRST",
+      "quality_requirement": "LOW"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00224",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "76be8a741a1af19aec0877e2b5a9afeadbe0daad7926d83d4a52f6b5dff56a75",
+      "eligible_models": [],
+      "template_id": "TEMPLATE_015",
+      "task_type": "SUMMARIZATION",
+      "complexity": "HIGH",
+      "data_classification": "RESTRICTED",
+      "cost_preference": "MINIMIZE_COST",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00234",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "aa365e3da4d317092137be81a479259714640e860f772b58894fc095a9b9fb5d",
+      "eligible_models": [
+        "multimodal",
+        "speech",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_025",
+      "task_type": "SPEECH_TO_TEXT",
+      "complexity": "HIGH",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "LATENCY_FIRST",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00235",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "1396fb60615e8f49875b6f04a0a40abc617bc6dc37d056feb2a34c2a53b28c46",
+      "eligible_models": [],
+      "template_id": "TEMPLATE_026",
+      "task_type": "TEXT_TO_SPEECH",
+      "complexity": "HIGH",
+      "data_classification": "INTERNAL",
+      "cost_preference": "QUALITY_FIRST",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00272",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "12c419cc92dd9d0dd3a665b0da168c9d9aa3ea675fe23f880a80edfc260f0b48",
+      "eligible_models": [
+        "local-small",
+        "enterprise",
+        "reasoning",
+        "long-context",
+        "coder",
+        "multimodal",
+        "embedder",
+        "speech",
+        "finance",
+        "speed",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_021",
+      "task_type": "TRANSLATION",
+      "complexity": "MEDIUM",
+      "data_classification": "INTERNAL",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00357",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "8ca1b4870fd86162dcecd8984cca27393e7a5a704b68090893d5de93358b9d19",
+      "eligible_models": [
+        "enterprise",
+        "reasoning",
+        "long-context",
+        "coder",
+        "multimodal",
+        "speech",
+        "finance"
+      ],
+      "template_id": "TEMPLATE_022",
+      "task_type": "QUESTION_ANSWERING",
+      "complexity": "MEDIUM",
+      "data_classification": "CONFIDENTIAL",
+      "cost_preference": "LATENCY_FIRST",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00358",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "19a305213c7eb944b2f116bf975988145d8a40927f616414393f8ec234349f25",
+      "eligible_models": [
+        "enterprise",
+        "finance"
+      ],
+      "template_id": "TEMPLATE_023",
+      "task_type": "RAG_QA",
+      "complexity": "MEDIUM",
+      "data_classification": "RESTRICTED",
+      "cost_preference": "MINIMIZE_COST",
+      "quality_requirement": "MEDIUM"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00393",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "fdb2ccef87bc90131727f2797478b6d4da9fbdd751b09e0ad39f345d7553766f",
+      "eligible_models": [
+        "enterprise",
+        "reasoning",
+        "finance",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_016",
+      "task_type": "CLASSIFICATION",
+      "complexity": "LOW",
+      "data_classification": "PUBLIC",
+      "cost_preference": "QUALITY_FIRST",
+      "quality_requirement": "HIGH"
+    },
+    {
+      "benchmark_type": "TEMPLATE_HELD_OUT",
+      "request_id": "HELDOUT-00396",
+      "dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "canonical_input_hash": "4a8f9138e88834bd04d8e43862be06393076981d0c833600ebba5e456fb69f57",
+      "eligible_models": [
+        "enterprise",
+        "reasoning",
+        "long-context",
+        "coder",
+        "multimodal",
+        "finance",
+        "frontier"
+      ],
+      "template_id": "TEMPLATE_019",
+      "task_type": "REASONING",
+      "complexity": "HIGH",
+      "data_classification": "PUBLIC",
+      "cost_preference": "BALANCED",
+      "quality_requirement": "HIGH"
+    }
+  ],
+  "baseline_results_hashes": {
+    "IID_SYNTHETIC": "c14131e46f172312f0979edea17c1fb1fcfe277a3f73497d9d2a3618f0d6478e",
+    "TEMPLATE_HELD_OUT": "11451b9f494b33af08b9990ef080c0dc66fe7a1ea0e8de745b2b8a146b9143f4"
+  },
+  "runtime_versions": {
+    "python": "3.13.13 (main, Apr  7 2026, 18:19:01) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "openai": "2.54.0",
+    "typesafe-sdk": "0.7.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.13.1",
+    "pydantic": "2.13.5"
+  },
+  "settings": {
+    "openai": {
+      "enabled": true,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "max_output_tokens": 512,
+      "temperature": null,
+      "pricing": null
+    },
+    "jev": {
+      "enabled": true,
+      "model": "jev-latest",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "backoff_seconds": 0.25,
+      "pricing": null,
+      "mock_mode": false
+    }
+  },
+  "live_config_hash": "5313cdf4c0f9db1145aeb99ca2b59713e6d8749da59d0fabd09bf819869df5d7",
+  "source_hashes": {
+    "app/strategies/llm.py": "ac6faad129a3c8c05f3e891e72666ab617e173efbc59675186894a2fd560fb2b",
+    "app/strategies/live_jev.py": "2fba7165e4ec57dc47efa34adfbfb44cb92f0155d9303f3ecc2c2e8f6154a965",
+    "app/strategies/live_base.py": "a2ab915764dc5550425cf9e9d4379f494724953604b631202383ab5e80800c3a",
+    "app/models/live_routing.py": "c2fe9bc6f8651d0cbcc459b90b58cdc0b028fdb5c4e123de6ffd5713dbf885f1",
+    "evaluation/live_benchmark.py": "1955906ea18e33af5873e2172b7782cdb48087396e05f23b17fcef406f51dc2a",
+    "evaluation/frozen_baseline.py": "adc6422908278cc2c12c62b7d50c8d699a6e7ba5bbd23d80a1e0464e4a2dbe6e",
+    "evaluation/live_store.py": "4a38fa804c0a022d6f704a044872698ac550d415b2d571e1f3289c92f688a584",
+    "evaluation/live_reporting.py": "37625aa158fbeb9033a9de756dd853dd52dd4dbded2c147a495b3c30e5d715f4"
+  },
+  "prompt_hashes": {
+    "openai": "5ef38427f393d84507e1cbf71b1a5b0b021f095fe3034cce242a749cc16c19a8",
+    "jev": "8ee1ee48991f523dd9d1f2b6a2123640146754a3a60b69c73dc7cd57d6483a49"
+  }
+}

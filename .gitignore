@@ -1,0 +1,44 @@
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.azure/
+.ssh/
+.netrc
+.npmrc
+.pypirc
+
+# Generated local state and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+runtime/
+*.joblib
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*.tmp
+*.log
+.bash_history
+.zsh_history
+.python_history
+
+# Scratch output written by the existing adversarial unit test.
+/reports/adversarial_results.csv
+
+# Frozen evidence under data/ and reports/ is deliberately tracked.

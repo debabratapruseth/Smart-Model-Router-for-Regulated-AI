@@ -1,0 +1,49 @@
+version: routing-1.0
+synthetic_demo_values: true
+default_strategy: weighted
+fallback_strategy: weighted
+confidence_threshold: 0.65
+human_review_threshold: 0.50
+fallback_on_low_confidence: true
+use_dynamic_telemetry: false
+telemetry_window: 100
+telemetry_max_age_seconds: 86400
+preferred_regions: [SINGAPORE]
+store_prompt_hash: true
+execute_selected_model: false
+routing_preferences:
+  balanced: {quality: 0.30, task_fit: 0.25, latency: 0.20, cost: 0.15, reliability: 0.10}
+  quality_first: {quality: 0.45, task_fit: 0.25, reliability: 0.15, latency: 0.10, cost: 0.05}
+  minimize_cost: {cost: 0.40, task_fit: 0.25, quality: 0.15, latency: 0.10, reliability: 0.10}
+  latency_first: {latency: 0.40, task_fit: 0.25, quality: 0.15, reliability: 0.10, cost: 0.10}
+feature_rules:
+  high_complexity_tokens: 10000
+  medium_complexity_tokens: 2000
+  high_reasoning_keywords: [reason, prove, complex, scenario, stress test]
+  tasks:
+    EMBEDDING: [embedding, embed, vectorize]
+    TEXT_TO_SPEECH: [text to speech, read aloud]
+    SPEECH_TO_TEXT: [transcribe, speech to text]
+    CODING: [code, python, sql, debug, function]
+    CLASSIFICATION: [classify, classification, categorize, label]
+    EXTRACTION: [extract, extraction, fields]
+    SUMMARIZATION: [summarize, summarise, summary, condense]
+    TRANSLATION: [translate, translation]
+    REASONING: [reason, prove, scenario, stress test]
+    ANALYSIS: [analyse, analyze, identify, analysis, risks]
+    RAG_QA: [internal policy, enterprise knowledge, retrieve]
+quality_fields:
+  CLASSIFICATION: classification_score
+  EXTRACTION: extraction_score
+  SUMMARIZATION: summarization_score
+  CODING: coding_score
+  REASONING: reasoning_score
+  ANALYSIS: finance_score
+  default: reasoning_score
+rule_thresholds:
+  large_context: 100000
+  low_latency_ms: 800
+llm:
+  timeout_seconds: 20
+  # Only non-sensitive, categorical features are sent to the routing API.
+  allowed_classifications: [PUBLIC]

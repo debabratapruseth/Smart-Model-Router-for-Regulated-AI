@@ -1,0 +1,31 @@
+{
+  "run_id": "20260929T155310-839c6b13",
+  "primary_run_id": "20260929T152852-8d825a67",
+  "primary_reports_unchanged": true,
+  "protected_files_checked": 290,
+  "protected_files_changed": [],
+  "sample_hash": "70db720aadaa0322b2a9f29b9e9a796269d44d780c7d6c7023c11914eee7f7c0",
+  "canonical_input_hashes_match_primary": true,
+  "observation_identity_unique": true,
+  "observations": 500,
+  "unique_requests": 50,
+  "planned_initial_api_calls": 500,
+  "actual_api_calls": 500,
+  "max_live_api_calls": 600,
+  "retry_count": 0,
+  "statuses": {
+    "ROUTED": 500
+  },
+  "routing_instruction_hashes": {
+    "openai": "5ef38427f393d84507e1cbf71b1a5b0b021f095fe3034cce242a749cc16c19a8",
+    "jev": "8ee1ee48991f523dd9d1f2b6a2123640146754a3a60b69c73dc7cd57d6483a49"
+  },
+  "returned_models": {
+    "jev": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "openai": [
+      "gpt-4.1-mini-2025-04-14"
+    ]
+  }
+}

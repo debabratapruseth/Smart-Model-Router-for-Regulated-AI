@@ -1,0 +1,21 @@
+version: routing-api-pricing-1.0
+pricing_version: routing-api-pricing-2026-09-29
+# Date this research pricing snapshot takes effect, not a claimed vendor price-change date.
+effective_date: "2026-09-29"
+verified_date: "2026-09-29"
+currency: USD
+source:
+  openai: https://developers.openai.com/api/docs/pricing
+  openai_model: https://developers.openai.com/api/docs/models/gpt-4.1-mini
+  jev: https://openrouter.ai/docs/guides/community/typesafe-sdk
+openai:
+  gpt-4.1-mini-2025-04-14:
+    service_tier: default
+    input_per_1m_tokens: 0.40
+    cached_input_per_1m_tokens: 0.10
+    output_per_1m_tokens: 1.60
+jev:
+  cost_method: PROVIDER_REPORTED
+  cost_field: usage.cost
+  currency: USD
+  missing_cost_status: PROVIDER_COST_UNAVAILABLE

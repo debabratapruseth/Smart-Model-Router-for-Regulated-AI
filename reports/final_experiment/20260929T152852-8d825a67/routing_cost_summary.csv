@@ -1,0 +1,2 @@
+scope,api_calls,total_input_tokens,total_cached_input_tokens,total_output_tokens,total_routing_cost_usd,routing_cost_usd,known_routing_cost_usd,unknown_cost_attempts
+ALL_ATTEMPTS_INCLUDING_FORCE_RERUN_HISTORY,608,1243116,,26485,0.252989002,0.252989002,0.252989002,0

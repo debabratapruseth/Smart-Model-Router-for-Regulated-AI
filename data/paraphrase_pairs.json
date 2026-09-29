@@ -1,0 +1,19 @@
+[
+  {
+    "pair_id": "FX-1",
+    "metadata": {
+      "data_classification": "INTERNAL",
+      "business_domain": "MARKET_RISK"
+    },
+    "first": "Analyse the major FX risks in this portfolio.",
+    "second": "Identify the main foreign exchange risks in this portfolio."
+  },
+  {
+    "pair_id": "SUM-1",
+    "metadata": {
+      "data_classification": "PUBLIC"
+    },
+    "first": "Summarize the fictional report.",
+    "second": "Condense the fictional report."
+  }
+]

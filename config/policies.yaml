@@ -1,0 +1,47 @@
+version: policy-1.0
+synthetic_demo_values: true
+# These are illustrative enterprise rules, not statements of banking law.
+allowed_classifications: [PUBLIC, INTERNAL, CONFIDENTIAL, RESTRICTED]
+restricted_allowed_providers: [INTERNAL]
+pii_required_regions: [SINGAPORE]
+customer_data_allowed_providers: [INTERNAL, APPROVED_CLOUD]
+financial_data_allowed_providers: [INTERNAL, APPROVED_CLOUD]
+secrets_allowed_providers: [INTERNAL]
+approved_providers: [INTERNAL, APPROVED_CLOUD, DEMO_EXTERNAL]
+prohibited_providers: [UNAPPROVED]
+unavailable_providers: []
+unavailable_regions: []
+critical_minimum_availability: 0.999
+quality_minimum: {LOW: 0.0, MEDIUM: 0.55, HIGH: 0.78, CRITICAL: 0.9}
+long_context_threshold: 100000
+long_context_minimum_window: 100000
+modality_capabilities:
+  TEXT: [text]
+  IMAGE: [text, vision]
+  AUDIO: [audio]
+  MULTIMODAL: [text, vision, audio]
+task_capabilities:
+  EMBEDDING: [embeddings]
+  CODING: [coding]
+  IMAGE: [vision]
+  MULTIMODAL: [vision, audio]
+  SPEECH_TO_TEXT: [audio]
+  TEXT_TO_SPEECH: [audio]
+# Stable IDs are included beside each rejection in the audit.
+policy_registry:
+  P01: Active and available models only
+  P02: Approved and request-allowed providers only
+  P03: Explicit model allow and deny lists
+  P04: Classification permissions
+  P05: Restricted data internal provider requirement
+  P06: Residency, PII and regional availability
+  P07: Business domain approval
+  P08: Modality and task capabilities
+  P09: Context plus reserved output capacity
+  P10: Critical service reliability
+  P11: Hard p95 latency SLA
+  P12: Secrets, customer and financial data provider constraints
+  P13: Enterprise knowledge and RAG capability
+  P14: Streaming capability
+  P15: Declared reasoning capability
+  P16: Task quality floor

@@ -1,0 +1,28 @@
+version: live-routing-1.0
+input_mode: STRUCTURED_ONLY
+research_mode_no_fallback: true
+openai:
+  enabled: false
+  model: null  # OPENAI_ROUTER_MODEL overrides; choose a supported Structured Outputs model explicitly.
+  timeout_seconds: 30
+  max_retries: 2
+  backoff_seconds: 0.25
+  max_output_tokens: 512
+  temperature: null  # Set 0 only for a chosen model that supports temperature; omitted by default.
+jev:
+  enabled: false
+  model: typesafe/jev-1.13  # Pinned OpenRouter request identifier; retain returned revision separately.
+  timeout_seconds: 30
+  max_retries: 2
+  backoff_seconds: 0.25
+pilot:
+  iid_requests: 15
+  held_out_requests: 15
+  seed: 3042
+  max_live_api_calls: 50
+# No assumed price. Populate entries keyed by the exact router model with verified rates.
+# Required fields: input_per_million_tokens, output_per_million_tokens,
+# cached_input_per_million_tokens, source, version, date.
+routing_api_pricing:
+  openai: {}
+  jev: {}

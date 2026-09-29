@@ -1,0 +1,42 @@
+version: final-experiment-1.1
+experiment_name: smart-model-router-final
+sampling_seed: 4042
+sampling_method: hierarchical-largest-remainder-v1
+primary_requests_per_benchmark: 200
+minimum_secondary_allocation: 2
+stratification_fields:
+  - expected_no_route
+  - task_type
+  - data_classification
+  - modality
+  - cost_preference
+  - complexity
+  - reasoning_requirement
+stability_seed: 5042
+stability_requests_per_benchmark: 25
+repetitions: 5
+# Exclude every selected request, including failed attempts and policy abstentions.
+# These historical integration/pilot runs are read-only provenance sources.
+prior_live_pilot_run_ids:
+  - 20260928T163059-ca49e981
+  - 20260928T164013-13b41c9b
+  - 20260928T164612-a823bb14
+  - 20260928T165218-fdbdc7d6
+  - 20260929T123623-52fd51d5
+  - 20260929T123913-a0c012e2
+  - 20260929T125454-9c7cb858
+statistics:
+  bootstrap_seed: 6042
+  bootstrap_iterations: 10000
+  confidence_level: 0.95
+  correction: holm-bonferroni
+  correction_family: all_router_pairs_within_benchmark_and_metric
+sources:
+  IID_SYNTHETIC:
+    source_run_id: 20260928T153247-eb297b76
+    dataset_hash: 3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b
+    results_hash: c14131e46f172312f0979edea17c1fb1fcfe277a3f73497d9d2a3618f0d6478e
+  TEMPLATE_HELD_OUT:
+    source_run_id: 20260928T153148-82538755
+    dataset_hash: 1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186
+    results_hash: 11451b9f494b33af08b9990ef080c0dc66fe7a1ea0e8de745b2b8a146b9143f4

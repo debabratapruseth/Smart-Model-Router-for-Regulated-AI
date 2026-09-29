@@ -1,0 +1,35 @@
+version: benchmark-2.0
+random_seed: 42
+benchmark_size: 1000
+ml_training_size: 600
+ml_training_seed: 1042
+strategies: [frontier_only, cheapest_only, rules, weighted, ml, llm, jev]
+bootstrap_samples: 1000
+calibration_bins: 10
+quality_noninferiority_margin: 0.03
+acceptable_quality_tolerance: 0.12
+resilience_sample_size: 100
+execute_selected_model: false
+business_case:
+  annual_requests: 1000000
+  current_average_cost_per_request: 0.02
+  router_average_cost_per_request: 0.01
+benchmark:
+  domains: [RETAIL_BANKING, CORPORATE_BANKING, PAYMENTS, AML, KYC, FRAUD, MARKET_RISK, CREDIT_RISK, OPERATIONAL_RISK, TREASURY, COMPLIANCE, CYBERSECURITY, TECHNOLOGY, CUSTOMER_SERVICE, SOFTWARE_ENGINEERING, RESEARCH]
+  difficulties: [EASY, MEDIUM, HARD, AMBIGUOUS, ADVERSARIAL]
+  classifications: [PUBLIC, INTERNAL, CONFIDENTIAL, RESTRICTED]
+  context_sizes: [128, 512, 2000, 16000, 120000, 400000]
+
+# Fixed in advance; validation reports agreement, not an extensive parameter search.
+ml_validation_size: 200
+ml_validation_seed: 1043
+ml_hyperparameters: {n_estimators: 60, max_depth: 10, n_jobs: 1}
+ground_truth_version: synthetic-quality-band-1.0
+primary_input_mode: STRUCTURED_ONLY
+# Reserved for a future separate experiment; not executable in the primary benchmark.
+future_secondary_input_mode: STRUCTURED_PLUS_PROMPT
+held_out_test_seed: 2042
+held_out_test_size: 400
+training_templates: [TEMPLATE_001, TEMPLATE_002, TEMPLATE_003, TEMPLATE_004, TEMPLATE_005, TEMPLATE_006, TEMPLATE_007, TEMPLATE_008, TEMPLATE_009, TEMPLATE_010, TEMPLATE_011, TEMPLATE_012, TEMPLATE_013, TEMPLATE_014]
+validation_templates: [TEMPLATE_001, TEMPLATE_002, TEMPLATE_003, TEMPLATE_004, TEMPLATE_005, TEMPLATE_006, TEMPLATE_007, TEMPLATE_008, TEMPLATE_009, TEMPLATE_010, TEMPLATE_011, TEMPLATE_012, TEMPLATE_013, TEMPLATE_014]
+test_templates: [TEMPLATE_015, TEMPLATE_016, TEMPLATE_017, TEMPLATE_018, TEMPLATE_019, TEMPLATE_020, TEMPLATE_021, TEMPLATE_022, TEMPLATE_023, TEMPLATE_024, TEMPLATE_025, TEMPLATE_026, TEMPLATE_027, TEMPLATE_028]

@@ -1,0 +1,671 @@
+# SYNTHETIC DEMO VALUES: no vendor measurements or prices. JSON is valid YAML.
+{
+  "version": "catalog-1.0",
+  "synthetic_demo_values": true,
+  "models": [
+    {
+      "model_id": "local-small",
+      "name": "Synthetic local-small",
+      "provider": "INTERNAL",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": false,
+        "coding": false,
+        "embeddings": false,
+        "tool_calling": false,
+        "structured_output": true,
+        "streaming": false,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 8000,
+        "max_output_tokens": 4000
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL",
+          "RESTRICTED"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 180,
+        "p95_latency_ms": 270.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 0.01,
+        "output_cost_per_1m_tokens": 0.02
+      },
+      "quality": {
+        "reasoning_score": 0.7,
+        "summarization_score": 0.7,
+        "classification_score": 0.84,
+        "extraction_score": 0.7,
+        "coding_score": 0.7,
+        "finance_score": 0.7
+      },
+      "tier": "small"
+    },
+    {
+      "model_id": "enterprise",
+      "name": "Synthetic enterprise",
+      "provider": "INTERNAL",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": true,
+        "coding": true,
+        "embeddings": false,
+        "tool_calling": true,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": true
+      },
+      "limits": {
+        "context_window": 128000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL",
+          "RESTRICTED"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 850,
+        "p95_latency_ms": 1275.0,
+        "success_rate": 0.9995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 0.5,
+        "output_cost_per_1m_tokens": 1
+      },
+      "quality": {
+        "reasoning_score": 0.87,
+        "summarization_score": 0.87,
+        "classification_score": 0.87,
+        "extraction_score": 0.87,
+        "coding_score": 0.87,
+        "finance_score": 0.87
+      },
+      "tier": "standard"
+    },
+    {
+      "model_id": "reasoning",
+      "name": "Synthetic reasoning",
+      "provider": "APPROVED_CLOUD",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": true,
+        "coding": true,
+        "embeddings": false,
+        "tool_calling": false,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 128000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 2200,
+        "p95_latency_ms": 3300.0,
+        "success_rate": 0.9995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 3,
+        "output_cost_per_1m_tokens": 9
+      },
+      "quality": {
+        "reasoning_score": 0.96,
+        "summarization_score": 0.96,
+        "classification_score": 0.96,
+        "extraction_score": 0.96,
+        "coding_score": 0.96,
+        "finance_score": 0.96
+      },
+      "tier": "standard"
+    },
+    {
+      "model_id": "economy",
+      "name": "Synthetic economy",
+      "provider": "DEMO_EXTERNAL",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "US",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": false,
+        "coding": false,
+        "embeddings": false,
+        "tool_calling": false,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 32000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC"
+        ],
+        "allowed_regions": [
+          "US"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 420,
+        "p95_latency_ms": 630.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 0.04,
+        "output_cost_per_1m_tokens": 0.1
+      },
+      "quality": {
+        "reasoning_score": 0.72,
+        "summarization_score": 0.72,
+        "classification_score": 0.72,
+        "extraction_score": 0.72,
+        "coding_score": 0.72,
+        "finance_score": 0.72
+      },
+      "tier": "small"
+    },
+    {
+      "model_id": "long-context",
+      "name": "Synthetic long-context",
+      "provider": "APPROVED_CLOUD",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": true,
+        "coding": false,
+        "embeddings": false,
+        "tool_calling": true,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": true
+      },
+      "limits": {
+        "context_window": 1000000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 1600,
+        "p95_latency_ms": 2400.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 1,
+        "output_cost_per_1m_tokens": 3
+      },
+      "quality": {
+        "reasoning_score": 0.86,
+        "summarization_score": 0.86,
+        "classification_score": 0.86,
+        "extraction_score": 0.86,
+        "coding_score": 0.86,
+        "finance_score": 0.86
+      },
+      "tier": "standard"
+    },
+    {
+      "model_id": "coder",
+      "name": "Synthetic coder",
+      "provider": "INTERNAL",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": true,
+        "coding": true,
+        "embeddings": false,
+        "tool_calling": false,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 64000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL",
+          "RESTRICTED"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 650,
+        "p95_latency_ms": 975.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 0.25,
+        "output_cost_per_1m_tokens": 0.6
+      },
+      "quality": {
+        "reasoning_score": 0.83,
+        "summarization_score": 0.83,
+        "classification_score": 0.83,
+        "extraction_score": 0.83,
+        "coding_score": 0.97,
+        "finance_score": 0.83
+      },
+      "tier": "standard"
+    },
+    {
+      "model_id": "multimodal",
+      "name": "Synthetic multimodal",
+      "provider": "APPROVED_CLOUD",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": true,
+        "reasoning": true,
+        "coding": false,
+        "embeddings": false,
+        "tool_calling": false,
+        "structured_output": true,
+        "streaming": false,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 128000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 1300,
+        "p95_latency_ms": 1950.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 1.5,
+        "output_cost_per_1m_tokens": 4
+      },
+      "quality": {
+        "reasoning_score": 0.88,
+        "summarization_score": 0.88,
+        "classification_score": 0.88,
+        "extraction_score": 0.88,
+        "coding_score": 0.88,
+        "finance_score": 0.88
+      },
+      "tier": "standard"
+    },
+    {
+      "model_id": "embedder",
+      "name": "Synthetic embedder",
+      "provider": "INTERNAL",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": false,
+        "coding": false,
+        "embeddings": true,
+        "tool_calling": false,
+        "structured_output": false,
+        "streaming": false,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 32000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL",
+          "RESTRICTED"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 100,
+        "p95_latency_ms": 150.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 0.015,
+        "output_cost_per_1m_tokens": 0
+      },
+      "quality": {
+        "reasoning_score": 0.6,
+        "summarization_score": 0.8,
+        "classification_score": 0.8,
+        "extraction_score": 0.8,
+        "coding_score": 0.8,
+        "finance_score": 0.8
+      },
+      "tier": "specialist"
+    },
+    {
+      "model_id": "speech",
+      "name": "Synthetic speech",
+      "provider": "INTERNAL",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": true,
+        "reasoning": false,
+        "coding": false,
+        "embeddings": false,
+        "tool_calling": false,
+        "structured_output": false,
+        "streaming": true,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 32000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL",
+          "RESTRICTED"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 700,
+        "p95_latency_ms": 1050.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 0.4,
+        "output_cost_per_1m_tokens": 0.8
+      },
+      "quality": {
+        "reasoning_score": 0.82,
+        "summarization_score": 0.82,
+        "classification_score": 0.82,
+        "extraction_score": 0.82,
+        "coding_score": 0.82,
+        "finance_score": 0.82
+      },
+      "tier": "specialist"
+    },
+    {
+      "model_id": "finance",
+      "name": "Synthetic finance",
+      "provider": "INTERNAL",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": true,
+        "coding": false,
+        "embeddings": false,
+        "tool_calling": true,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": true
+      },
+      "limits": {
+        "context_window": 128000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL",
+          "RESTRICTED"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 1000,
+        "p95_latency_ms": 1500.0,
+        "success_rate": 0.9995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 1,
+        "output_cost_per_1m_tokens": 2
+      },
+      "quality": {
+        "reasoning_score": 0.92,
+        "summarization_score": 0.92,
+        "classification_score": 0.92,
+        "extraction_score": 0.92,
+        "coding_score": 0.92,
+        "finance_score": 0.98
+      },
+      "tier": "specialist"
+    },
+    {
+      "model_id": "speed",
+      "name": "Synthetic speed",
+      "provider": "APPROVED_CLOUD",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "SINGAPORE",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "reasoning": false,
+        "coding": false,
+        "embeddings": false,
+        "tool_calling": false,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 32000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL"
+        ],
+        "allowed_regions": [
+          "SINGAPORE"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 90,
+        "p95_latency_ms": 135.0,
+        "success_rate": 0.995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 0.12,
+        "output_cost_per_1m_tokens": 0.3
+      },
+      "quality": {
+        "reasoning_score": 0.77,
+        "summarization_score": 0.77,
+        "classification_score": 0.77,
+        "extraction_score": 0.77,
+        "coding_score": 0.77,
+        "finance_score": 0.77
+      },
+      "tier": "small"
+    },
+    {
+      "model_id": "frontier",
+      "name": "Synthetic frontier",
+      "provider": "APPROVED_CLOUD",
+      "version": "demo-1",
+      "status": "ACTIVE",
+      "region": "US",
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": true,
+        "reasoning": true,
+        "coding": true,
+        "embeddings": false,
+        "tool_calling": true,
+        "structured_output": true,
+        "streaming": true,
+        "enterprise_knowledge": false
+      },
+      "limits": {
+        "context_window": 256000,
+        "max_output_tokens": 8192
+      },
+      "security": {
+        "allowed_classifications": [
+          "PUBLIC",
+          "INTERNAL",
+          "CONFIDENTIAL"
+        ],
+        "allowed_regions": [
+          "US"
+        ],
+        "approved_business_domains": [
+          "*"
+        ]
+      },
+      "performance": {
+        "p50_latency_ms": 2800,
+        "p95_latency_ms": 4200.0,
+        "success_rate": 0.9995
+      },
+      "economics": {
+        "input_cost_per_1m_tokens": 6,
+        "output_cost_per_1m_tokens": 18
+      },
+      "quality": {
+        "reasoning_score": 0.98,
+        "summarization_score": 0.98,
+        "classification_score": 0.98,
+        "extraction_score": 0.98,
+        "coding_score": 0.98,
+        "finance_score": 0.98
+      },
+      "tier": "frontier"
+    }
+  ]
+}

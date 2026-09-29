@@ -1,0 +1,5 @@
+benchmark_type,strategy,requests,requests_with_at_least_two_successes,requests_with_zero_successes,requests_with_one_success,exact_selection_consistency,full_consistency_rate,all_five_successful_and_consistent_rate,pairwise_repetition_agreement,comparable_repetition_pairs,unique_models_mean,unique_models_median,unique_models_max,failure_count,retry_count,successful_repetitions,interpretation
+IID_SYNTHETIC,jev,25,25,0,0,0.992,0.96,0.96,0.984,250,1.04,1.0,2,0,0,125,SUCCESS_CONDITIONAL_REQUEST_CLUSTERED_DESCRIPTIVE
+IID_SYNTHETIC,openai,25,25,0,0,0.9440000000000001,0.8,0.8,0.904,250,1.2,1.0,2,0,0,125,SUCCESS_CONDITIONAL_REQUEST_CLUSTERED_DESCRIPTIVE
+TEMPLATE_HELD_OUT,jev,25,25,0,0,1.0,1.0,1.0,1.0,250,1.0,1.0,1,0,0,125,SUCCESS_CONDITIONAL_REQUEST_CLUSTERED_DESCRIPTIVE
+TEMPLATE_HELD_OUT,openai,25,25,0,0,0.9440000000000001,0.8,0.8,0.904,250,1.2,1.0,2,0,0,125,SUCCESS_CONDITIONAL_REQUEST_CLUSTERED_DESCRIPTIVE

@@ -1,0 +1,237 @@
+{
+  "mode": "DRY_RUN_PREFLIGHT_ONLY",
+  "experiment_mode": "stability",
+  "external_api_calls_made": 0,
+  "sample_manifest_path": "/Users/debabrata/Documents/Model Adapter/smart-model-router/data/final_experiment/final-70db720aadaa0322/sample_manifest.json",
+  "sample_hash": "70db720aadaa0322b2a9f29b9e9a796269d44d780c7d6c7023c11914eee7f7c0",
+  "exclusions": {
+    "exclusion_reason": "PRIOR_LIVE_PILOT",
+    "source_pilot_run_ids": [
+      "20260928T163059-ca49e981",
+      "20260928T164013-13b41c9b",
+      "20260928T164612-a823bb14",
+      "20260928T165218-fdbdc7d6",
+      "20260929T123623-52fd51d5",
+      "20260929T123913-a0c012e2",
+      "20260929T125454-9c7cb858"
+    ],
+    "source_report_hashes": {
+      "20260928T163059-ca49e981": {
+        "run_manifest.json": "58815e77f52f720b43343b38fb2011c84f4c319bfb0bb70b4c073823cf00b0b2",
+        "pilot_plan.json": "d58360b256adfd8f60b48c86111f859df17570677743b5d9183c9b7297a3eb0d",
+        "benchmark_results.csv": "5f8659d0129e23bff4520428c0e387f921fd05e14bf6ab1ff2768cac7235b147"
+      },
+      "20260928T164013-13b41c9b": {
+        "run_manifest.json": "c875eba56cb820a9a714b3a76a5f953a0c0f619be6623433560d0001676d8031",
+        "pilot_plan.json": "d7c498966a2d8b07d7f4a4f070dee56e49c6675c031e70e9759a534ca7e431a4",
+        "benchmark_results.csv": "edf691843f202de0f7e8d51e9f6146063df78a181311734120c31dd981a04895"
+      },
+      "20260928T164612-a823bb14": {
+        "run_manifest.json": "ff328f1a00b63201d08d4c27ebff8167ee557952b8cf1c222f18ff377258b443",
+        "pilot_plan.json": "d7c498966a2d8b07d7f4a4f070dee56e49c6675c031e70e9759a534ca7e431a4",
+        "benchmark_results.csv": "21e2461eb5169ba200859c3714f704bf70904e0ca4262e69394f1e96af7c563b"
+      },
+      "20260928T165218-fdbdc7d6": {
+        "run_manifest.json": "a5f1184fc33eecd9292e172a1328ac82748c190e7e7930d358fea18331ebe787",
+        "pilot_plan.json": "0dd528c413edde8f962ba7ff280d56d32783f052a1a66a1ce942577f1b6fdb1a",
+        "benchmark_results.csv": "80ba3e6eb1081392e97f3c1c0fa01e73a6cd91c5f98e12f465cfffed0e131b4b"
+      },
+      "20260929T123623-52fd51d5": {
+        "run_manifest.json": "3ebe90df5a8c1efcfcfb54a577e83af8bb25b51327853256ec775f27cae79f98",
+        "pilot_plan.json": "b4e9be23ee03e2af31d8c2ad4a0568c96eaf25e959f2a940a4cb963b4464f352",
+        "benchmark_results.csv": "c9fc00d12f093166dbd451dbef9c2945ddf0e05970e0f1ff4d067653d81eeb71"
+      },
+      "20260929T123913-a0c012e2": {
+        "run_manifest.json": "58e63b63c4a560d7aa832731c87286802398ad1d0fdcce7005099c4fd29b3f0b",
+        "pilot_plan.json": "273dcb532adac144495716cbc579fc8b96797a9fbef7e7dcee0fce79f0cb64fe",
+        "benchmark_results.csv": "50a3c5feb37422d719b5216686e755a0db2e6e0a3360edb8d8b58fe82c4ca6e4"
+      },
+      "20260929T125454-9c7cb858": {
+        "run_manifest.json": "680350862d484417c5997d7cb16fadc3ec666c2db52eedbd1ca9dd07cabb96d9",
+        "pilot_plan.json": "8155dfe35280495270a9a7eaa61c85a11a86cbb57f204aeed73f20005ffedb4f",
+        "benchmark_results.csv": "981790222f3438e84cf33df066fa3f6f5ac17a9d795282587884dfadc62a7e3f"
+      }
+    },
+    "benchmarks": {
+      "IID_SYNTHETIC": {
+        "excluded_request_count": 15,
+        "excluded_request_ids": [
+          "REQ-00037",
+          "REQ-00083",
+          "REQ-00165",
+          "REQ-00381",
+          "REQ-00392",
+          "REQ-00484",
+          "REQ-00618",
+          "REQ-00648",
+          "REQ-00707",
+          "REQ-00715",
+          "REQ-00724",
+          "REQ-00748",
+          "REQ-00845",
+          "REQ-00852",
+          "REQ-00962"
+        ],
+        "source_pilot_run_ids": [
+          "20260928T163059-ca49e981",
+          "20260928T164013-13b41c9b",
+          "20260928T164612-a823bb14",
+          "20260928T165218-fdbdc7d6",
+          "20260929T123623-52fd51d5",
+          "20260929T123913-a0c012e2",
+          "20260929T125454-9c7cb858"
+        ]
+      },
+      "TEMPLATE_HELD_OUT": {
+        "excluded_request_count": 15,
+        "excluded_request_ids": [
+          "HELDOUT-00025",
+          "HELDOUT-00030",
+          "HELDOUT-00083",
+          "HELDOUT-00117",
+          "HELDOUT-00143",
+          "HELDOUT-00180",
+          "HELDOUT-00191",
+          "HELDOUT-00224",
+          "HELDOUT-00234",
+          "HELDOUT-00235",
+          "HELDOUT-00272",
+          "HELDOUT-00357",
+          "HELDOUT-00358",
+          "HELDOUT-00393",
+          "HELDOUT-00396"
+        ],
+        "source_pilot_run_ids": [
+          "20260928T163059-ca49e981",
+          "20260928T164013-13b41c9b",
+          "20260928T164612-a823bb14",
+          "20260928T165218-fdbdc7d6",
+          "20260929T123623-52fd51d5",
+          "20260929T123913-a0c012e2",
+          "20260929T125454-9c7cb858"
+        ]
+      }
+    },
+    "exclusion_set_hash": "23116e8f3bbce99e67bb600042024c50c4842064932f449cead66475c9883665"
+  },
+  "prior_live_pilot_overlap": {
+    "IID_SYNTHETIC": 0,
+    "TEMPLATE_HELD_OUT": 0
+  },
+  "sampling_seed": 4042,
+  "sampling_method": "hierarchical-largest-remainder-v1",
+  "stratification_fields": [
+    "expected_no_route",
+    "task_type",
+    "data_classification",
+    "modality",
+    "cost_preference",
+    "complexity",
+    "reasoning_requirement"
+  ],
+  "primary": {
+    "IID_SYNTHETIC": {
+      "sample_size": 200,
+      "expected_no_route_count": 51,
+      "routable_count": 149,
+      "source_dataset_hash": "3b81a336d8418a554123f4d3a34e01d97f635929dd39a805e8e16c0aa2532c8b",
+      "sample_dataset_hash": "5fa76698c89399417c397c1b1888bd047b16a974a8b8fbaa1c83b59edafdbc07"
+    },
+    "TEMPLATE_HELD_OUT": {
+      "sample_size": 200,
+      "expected_no_route_count": 45,
+      "routable_count": 155,
+      "source_dataset_hash": "1ae4fbf0eb6aa0ac7bd39aee57c1e08bffbcec80745c6a385e5f61ab099c9186",
+      "sample_dataset_hash": "c813ffc1a843414774ff2dc2613f2bbed6a3f1e745ae874758e8f1dde8fea4b4"
+    }
+  },
+  "primary_planned_calls_per_provider": {
+    "openai": 304,
+    "jev_via_openrouter": 304
+  },
+  "primary_planned_calls_all_live_providers": 608,
+  "stability": {
+    "IID_SYNTHETIC": 25,
+    "TEMPLATE_HELD_OUT": 25,
+    "repetitions": 5,
+    "planned_openai_calls": 250,
+    "planned_jev_via_openrouter_calls": 250,
+    "planned_total_calls": 500
+  },
+  "selected_strategies": [
+    "openai",
+    "jev"
+  ],
+  "selected_planned_external_calls": 500,
+  "max_live_api_calls": 50,
+  "call_cap_sufficient_for_new_run": false,
+  "max_routing_spend_usd": null,
+  "estimated_maximum_spend_usd": null,
+  "spend_estimate_note": "No reliable combined maximum: output usage, retries, served tier and native Jev charge are not known in advance.",
+  "providers": {
+    "openai": {
+      "strategy": "openai",
+      "selected": true,
+      "key_present": true,
+      "enabled": true,
+      "model": "gpt-4.1-mini-2025-04-14",
+      "mock_mode": false,
+      "available": true,
+      "execution_provider": "openai",
+      "execution_path": "OPENAI_DIRECT",
+      "pricing_available": true,
+      "cost_method": "VERSIONED_USAGE_RATES"
+    },
+    "jev": {
+      "strategy": "jev",
+      "selected": true,
+      "key_present": true,
+      "enabled": true,
+      "model": "typesafe/jev-1.13",
+      "mock_mode": false,
+      "available": true,
+      "execution_provider": "openrouter",
+      "execution_path": "JEV_VIA_OPENROUTER",
+      "pricing_available": true,
+      "cost_method": "PROVIDER_REPORTED_WHEN_RETURNED"
+    }
+  },
+  "source_hashes": {
+    "app/strategies/llm.py": "3e332e90d628e1616b9f9b89133670e2dae6a2d2e7d3752075db081fabafbc1b",
+    "app/strategies/live_jev.py": "c29fec2c765742132cc0a4c49ea3974b26bd3c496e0a8cf92b293f731adc550a",
+    "app/strategies/live_base.py": "13852d7e9306269830b621754b02411996d18da5b9ff2bb6f5facd8ed26d17ef",
+    "app/models/live_routing.py": "19d3c928a411260214e998cabad20d920703e350f26811d4563a60f5058d2623",
+    "evaluation/live_benchmark.py": "82f6110fb082a05ade4aecfe7a079e618914695e5b435c0b6f85c7ed6089a657",
+    "evaluation/frozen_baseline.py": "adc6422908278cc2c12c62b7d50c8d699a6e7ba5bbd23d80a1e0464e4a2dbe6e",
+    "evaluation/live_store.py": "cb3635e4e559c40892037959363ed3f32d21b94ba4cadbe7076f7d157b01b8dc",
+    "evaluation/live_reporting.py": "9b7d4032d90c8298e4c1e3f3d32b9e4e21b320d90ebb81d4759fe0035d11db57",
+    "app/services/routing_costs.py": "205078500bf7c94eb7fefaf5bf0ce07303f8bf0c9bbb6088a0c811fa4aec5afb",
+    "evaluation/experiment_sampling.py": "4a3050ac3467071813f87944a3758149f6ac09886b7ec58d33f8b4553a23cb41",
+    "evaluation/experiment_preflight.py": "5ac01fcb74b21b09872abac6b62c2e08970763acdbc3b22f748336715c871db1",
+    "evaluation/experiment_statistics.py": "ada2bc0d6486aae51969cf9ba523407cc77091d98d8630041a0bbfeafb175502",
+    "evaluation/experiment_stability.py": "6053eaaf281a255f135b0d9058aa98632f0577019ad6cca4b585f32dc2ccd2ab"
+  },
+  "source_validation": "PASSED",
+  "sample_validation": "PASSED",
+  "baseline_replay_available": {
+    "rules": 400,
+    "weighted": 400,
+    "ml": 400
+  },
+  "held_out_template_leakage": 0,
+  "statistics": {
+    "bootstrap_seed": 6042,
+    "bootstrap_iterations": 10000,
+    "confidence_level": 0.95,
+    "correction": "holm-bonferroni",
+    "correction_family": "all_router_pairs_within_benchmark_and_metric"
+  },
+  "pricing_config_hash": "3ae145fe4cd76691956814d8ca9bba70d7305f236606d70d4340ab767f1c7166",
+  "pricing_version": "routing-api-pricing-2026-09-29",
+  "pricing_effective_date": "2026-09-29",
+  "pricing_source": {
+    "openai": "https://developers.openai.com/api/docs/pricing",
+    "openai_model": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+    "jev": "https://openrouter.ai/docs/guides/community/typesafe-sdk"
+  }
+}
