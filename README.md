@@ -75,13 +75,13 @@ The synthetic reference objective prefers the cheapest eligible model within **0
 
 **Synthetic Reference-Route Agreement — including correct abstentions**, with 200 requests per benchmark:
 
-| Router | IID Preferred | Held-out Preferred | IID Acceptable | Held-out Acceptable | Mean routing latency | External routing API cost |
-|---|---:|---:|---:|---:|---:|---:|
-| Rules | 65.5% | 63.0% | 86.5% | 88.5% | ~0.57–0.58 ms | $0 |
-| Weighted | 78.0% | 76.5% | 84.0% | 85.0% | ~0.57–0.59 ms | $0 |
-| ML | 99.0% | 99.0% | 99.5% | 99.0% | ~1.54–1.62 ms | $0 |
-| OpenAI | 75.5% | 71.5% | 85.0% | 83.5% | ~1.06–1.09 s | $0.2230 |
-| Jev via OpenRouter | 74.5% | 70.0% | 86.0% | 84.0% | ~0.41–0.44 s | $0.0300 |
+| Router | IID Preferred | Held-out Preferred | IID Acceptable | Held-out Acceptable | Mean latency — all requests | Mean latency — live routed requests | External routing API cost |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Rules | 65.5% | 63.0% | 86.5% | 88.5% | ~0.57–0.58 ms | N/A | $0 |
+| Weighted | 78.0% | 76.5% | 84.0% | 85.0% | ~0.57–0.59 ms | N/A | $0 |
+| ML | 99.0% | 99.0% | 99.5% | 99.0% | ~1.54–1.62 ms | N/A | $0 |
+| OpenAI | 75.5% | 71.5% | 85.0% | 83.5% | ~1.06–1.09 s | **1.424 / 1.406 s** | $0.2230 |
+| Jev via OpenRouter | 74.5% | 70.0% | 86.0% | 84.0% | ~0.41–0.44 s | **0.544 / 0.562 s** | $0.0300 |
 
 Latency ranges in the table show benchmark means over all requests, including policy-handled NO_ROUTE cases. For the direct operational comparison between the two live routers, the more relevant measurement is latency on requests that actually generated an external routing decision. Across those routed requests, OpenAI averaged 1423.75 ms (IID) and 1406.17 ms (template-held-out), while Jev via OpenRouter averaged 543.80 ms (IID) and 562.02 ms (template-held-out). This corresponds to approximately 2.62× and 2.50× lower observed mean live-routing latency, respectively, for the Jev-via-OpenRouter execution path.
 
