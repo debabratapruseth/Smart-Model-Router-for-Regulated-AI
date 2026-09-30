@@ -203,15 +203,4 @@ Tests use temporary fixtures and mocked transports. Do not regenerate frozen dat
 
 See [RESEARCH_RELEASE.md](docs/RESEARCH_RELEASE.md) for complete methodology, provenance and evidence boundaries.
 
-## Frozen research release
-
-The immutable V1 baseline is **`v1.0.0-research`**. This README update on `main` follows that release; checking out the tag retrieves the original release README along with the frozen source and evidence.
-
-| Identifier | Value |
-|---|---|
-| Tag | `v1.0.0-research` |
-| Primary run | `20260929T152852-8d825a67` |
-| Stability run | `20260929T155310-839c6b13` |
-| Final sample hash | `70db720aadaa0322b2a9f29b9e9a796269d44d780c7d6c7023c11914eee7f7c0` |
-
 The [final sample manifest](data/final_experiment/final-70db720aadaa0322/sample_manifest.json), [research release document](docs/RESEARCH_RELEASE.md) and [artifact SHA-256 checksums](RESEARCH_ARTIFACT_SHA256SUMS.txt) support independent inspection. Cite the repository together with the frozen tag and its target commit.
