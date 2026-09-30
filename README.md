@@ -111,7 +111,7 @@ General-purpose LLMs support broad language and reasoning tasks. Routing is a bo
 
 This raises a research hypothesis: specialized fast decision models may be useful for AI control-plane decisions where full generative reasoning is unnecessary. Jev 1.13 represents that approach in this five-way comparison; it is a research subject, not an assumed winner.
 
-The configured model was **`typesafe/jev-1.13`**, with returned revision **`typesafe/jev-1.13-20260917`**, executed through **`JEV_VIA_OPENROUTER`**. All Jev latency and cost observations are end-to-end **Jev-via-OpenRouter** measurements, not direct Jev API measurements.
+The configured model was **`typesafe/jev-1.13`**, executed through **`JEV_VIA_OPENROUTER`**. All Jev latency and cost observations are end-to-end **Jev-via-OpenRouter** measurements, not direct Jev API measurements.
 
 ## Stability: repeated decisions on identical inputs
 
