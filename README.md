@@ -10,6 +10,14 @@ Instead of sending every request to the same model, it first determines which mo
 
 Hard policy constraints execute **before** intelligent routing: **Governance → Eligibility → Optimization → Validation**. No routing strategy can override governance.
 
+## Companion Blog
+
+For a more accessible introduction to the ideas behind this research:
+
+- **[System 1 vs LLM: Does Every AI Decision Really Need a Large Language Model?](https://debabratapruseth.com/system-1-vs-llm-does-every-ai-decision-really-need-a-large-language-model/)** — A layman-friendly introduction to System 1 decision models, the psychology behind the concept, and their potential role in enterprise AI.
+
+- **[Does Every AI Control-Plane Decision Need an LLM? Evaluating Specialized Decision Models for Policy-Aware AI Routing](https://debabratapruseth.com/does-every-ai-control-plane-decision-need-an-llm-evaluating-specialized-decision-models-for-policy-aware-ai-routing/)** — The detailed research paper covering the methodology, experiments, statistical analysis, results, limitations, and architectural implications.
+
 ## Why this research matters
 
 Enterprise AI platforms increasingly have access to many models. In a regulated environment, model routing raises several connected questions:
