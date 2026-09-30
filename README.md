@@ -66,7 +66,7 @@ The primary sample contains **304 routable requests and 96 policy-handled `NO_RO
 
 Across both experiments there were **zero API failures, invalid decisions, ineligible selections, or policy violations**.
 
-- **IID_SYNTHETIC:** new synthetic samples from a familiar template family.
+- **IID_SYNTHETIC:** new synthetic samples from a familiar template family. IID refers to Independent and Identically Distributed.
 - **TEMPLATE_HELD_OUT:** requests from templates excluded from ML training and validation, within known task categories.
 
 The synthetic reference objective prefers the cheapest eligible model within **0.12** of the highest configured eligible quality score. These labels derive from configured policy, quality and cost assumptions, not human annotations or measured model responses. See the [methodology](docs/BENCHMARK_METHODOLOGY.md) for the training/validation design.
