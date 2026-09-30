@@ -158,39 +158,6 @@ reports/
 
 Explore the [primary reports](reports/final_experiment/20260929T152852-8d825a67/) and [stability reports](reports/stability/20260929T155310-839c6b13/). Detailed integrity checks, included provenance and legacy test-fixture boundaries are documented in [RESEARCH_RELEASE.md](docs/RESEARCH_RELEASE.md).
 
-## Reproducibility: inspect evidence without API credentials
-
-The experimental phase is closed. Inspect the saved evidence in the frozen release; no live rerun is needed. The recorded environment used Python 3.13.13 with locked dependencies.
-
-```bash
-git clone https://github.com/debabratapruseth/Smart-Model-Router-for-Regulated-AI.git
-cd Smart-Model-Router-for-Regulated-AI
-git checkout --detach v1.0.0-research
-python3.13 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-lock.txt
-shasum -a 256 -c RESEARCH_ARTIFACT_SHA256SUMS.txt
-```
-
-Package installation contacts package registries, not AI inference providers. The CSV reports can be inspected directly without credentials. Run the local tests with credentials removed from the test process and network connections blocked:
-
-```bash
-python -B - <<'PY'
-import os, socket, pytest
-for name in ('OPENAI_API_KEY', 'OPENROUTER_API_KEY', 'TYPESAFE_API_KEY'):
-    os.environ.pop(name, None)
-def deny_network(*args, **kwargs):
-    raise RuntimeError('External network access is disabled for offline tests')
-socket.socket.connect = deny_network
-socket.socket.connect_ex = deny_network
-socket.create_connection = deny_network
-raise SystemExit(pytest.main(['-q', '-p', 'no:cacheprovider']))
-PY
-shasum -a 256 -c RESEARCH_ARTIFACT_SHA256SUMS.txt
-```
-
-Tests use temporary fixtures and mocked transports. Do not regenerate frozen datasets, samples, labels or experiment outputs. Live execution requires valid provider credentials, enabled provider flags and explicit **`--allow-live-api`** authorization; it is outside this inspection workflow.
-
 ## Research limitations
 
 - Synthetic Reference-Route Agreement is not downstream response quality; ML was trained against that synthetic objective.
